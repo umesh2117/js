@@ -1,0 +1,19 @@
+body{
+    margin: opx;
+    padding: opx;
+    text-align: center;
+    background-color: #010c0c;
+    color: whitesmoke;
+}
+h1{
+    font-size: 45px;
+}
+input{
+    width: 75px;
+    height: 50px;
+    font-size: 45px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: white;
+    color: black;
+}
