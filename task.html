@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function convertAfterUnderscore(str) {
+  let result = "";
+  let capitalizeNext = false;
+
+  for (let char of str) {
+    if (char === '_') {
+      capitalizeNext = true;
+    } else {
+      if (capitalizeNext) {
+        result += char.toLowerCase();
+        capitalizeNext = false;
+      } else {
+        result += char;
+      }
+    }
+  }
+
+  return result;
+}
+
+// Example usage
+let inputString = "umesh_Raja_Yalla";
+let convertedString = convertAfterUnderscore(inputString);
+
+console.log(convertedString);
+
+    </script>
+</body>
+</html>
